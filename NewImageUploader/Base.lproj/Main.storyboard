@@ -48,6 +48,11 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="301" height="55"/>
                                                 <color key="backgroundColor" red="0.63934866099999998" green="0.96820529840000003" blue="0.82260374169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Choose image"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="buttonTapped:" destination="sfE-Uj-4P6" eventType="touchUpInside" id="9O0-Hf-sU3"/>
                                                 </connections>
@@ -56,6 +61,11 @@
                                                 <rect key="frame" x="0.0" y="70" width="301" height="55"/>
                                                 <color key="backgroundColor" red="0.63934866099999998" green="0.96820529840000003" blue="0.82260374169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Upload image"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaidus">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="buttonTapped:" destination="sfE-Uj-4P6" eventType="touchUpInside" id="4eV-Bu-yed"/>
                                                 </connections>

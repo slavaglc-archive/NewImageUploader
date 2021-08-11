@@ -1,18 +1,17 @@
 
 
 import UIKit
-import Alamofire
 
 class NetworkManager {
     static let shared = NetworkManager()
     private let currentUser = Account.shared
     
+    private init(){}
+    
     public func toAuthInImgur(){
         
         if let reqUrl = URL(string: "https://api.imgur.com/oauth2/token?refresh_token=\(currentUser.refreshToken ?? "")&client_id=\(currentUser.clientID ?? "")&client_secret=\(currentUser.imgurSecret ?? "")&grant_type=refresh_token")
             {
-            
-            
                 let request = NSMutableURLRequest(url: reqUrl)
             let bodyString = "grant_type=refresh_token&client_secret=\(currentUser.imgurSecret ?? "")&client_id=\(String(describing: currentUser.clientID))&refresh_token=\(currentUser.refreshToken ?? "")"
 
@@ -28,8 +27,6 @@ class NetworkManager {
                         print("error: \(error?.localizedDescription ?? "erorr")")
                         return
                     }
-                    let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-                    print("response string: \(responseString!)")
                 }
                 task.resume()
             }
@@ -114,6 +111,4 @@ class NetworkManager {
             }
         }
     
-    
-    private init(){}
 }
