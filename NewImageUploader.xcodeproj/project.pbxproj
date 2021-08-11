@@ -3,27 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5027073537D1D40ABEF2B06 /* Pods_NewImageUploader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5AE1458729B4ADDC6375A7 /* Pods_NewImageUploader.framework */; };
 		F9173F3A26C308DB00F9656D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9173F3926C308DB00F9656D /* AppDelegate.swift */; };
 		F9173F3C26C308DB00F9656D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9173F3B26C308DB00F9656D /* SceneDelegate.swift */; };
-		F9173F3E26C308DB00F9656D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9173F3D26C308DB00F9656D /* ViewController.swift */; };
 		F9173F4126C308DB00F9656D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9173F3F26C308DB00F9656D /* Main.storyboard */; };
 		F9173F4326C308DE00F9656D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9173F4226C308DE00F9656D /* Assets.xcassets */; };
 		F9173F4626C308DE00F9656D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9173F4426C308DE00F9656D /* LaunchScreen.storyboard */; };
+		F9173F4E26C3098300F9656D /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9173F4D26C3098300F9656D /* UploadViewController.swift */; };
+		F9173F5026C309C400F9656D /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9173F4F26C309C400F9656D /* AccountModel.swift */; };
+		F9173F5226C4585400F9656D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9173F5126C4585300F9656D /* NetworkManager.swift */; };
+		F9173F5426C47B2700F9656D /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9173F5326C47B2700F9656D /* ImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04C8E3E58B20FA5E5037BC32 /* Pods-NewImageUploader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewImageUploader.debug.xcconfig"; path = "Target Support Files/Pods-NewImageUploader/Pods-NewImageUploader.debug.xcconfig"; sourceTree = "<group>"; };
+		D0F0BE1E535E345085CB7322 /* Pods-NewImageUploader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewImageUploader.release.xcconfig"; path = "Target Support Files/Pods-NewImageUploader/Pods-NewImageUploader.release.xcconfig"; sourceTree = "<group>"; };
+		EA5AE1458729B4ADDC6375A7 /* Pods_NewImageUploader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewImageUploader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9173F3626C308DB00F9656D /* NewImageUploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewImageUploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9173F3926C308DB00F9656D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9173F3B26C308DB00F9656D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F9173F3D26C308DB00F9656D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9173F4026C308DB00F9656D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9173F4226C308DE00F9656D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9173F4526C308DE00F9656D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9173F4726C308DE00F9656D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9173F4D26C3098300F9656D /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		F9173F4F26C309C400F9656D /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		F9173F5126C4585300F9656D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F9173F5326C47B2700F9656D /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5027073537D1D40ABEF2B06 /* Pods_NewImageUploader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ECA2DF5808F0CEEAFB5324D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04C8E3E58B20FA5E5037BC32 /* Pods-NewImageUploader.debug.xcconfig */,
+				D0F0BE1E535E345085CB7322 /* Pods-NewImageUploader.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F9173F2D26C308DB00F9656D = {
 			isa = PBXGroup;
 			children = (
 				F9173F3826C308DB00F9656D /* NewImageUploader */,
 				F9173F3726C308DB00F9656D /* Products */,
+				ECA2DF5808F0CEEAFB5324D3 /* Pods */,
+				FD36C0F62C4578B441543BE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +80,24 @@
 			children = (
 				F9173F3926C308DB00F9656D /* AppDelegate.swift */,
 				F9173F3B26C308DB00F9656D /* SceneDelegate.swift */,
-				F9173F3D26C308DB00F9656D /* ViewController.swift */,
+				F9173F4D26C3098300F9656D /* UploadViewController.swift */,
+				F9173F5126C4585300F9656D /* NetworkManager.swift */,
+				F9173F4F26C309C400F9656D /* AccountModel.swift */,
+				F9173F5326C47B2700F9656D /* ImageModel.swift */,
 				F9173F3F26C308DB00F9656D /* Main.storyboard */,
 				F9173F4226C308DE00F9656D /* Assets.xcassets */,
 				F9173F4426C308DE00F9656D /* LaunchScreen.storyboard */,
 				F9173F4726C308DE00F9656D /* Info.plist */,
 			);
 			path = NewImageUploader;
+			sourceTree = "<group>";
+		};
+		FD36C0F62C4578B441543BE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA5AE1458729B4ADDC6375A7 /* Pods_NewImageUploader.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9173F4A26C308DE00F9656D /* Build configuration list for PBXNativeTarget "NewImageUploader" */;
 			buildPhases = (
+				5472871837AF90B9282F8E78 /* [CP] Check Pods Manifest.lock */,
 				F9173F3226C308DB00F9656D /* Sources */,
 				F9173F3326C308DB00F9656D /* Frameworks */,
 				F9173F3426C308DB00F9656D /* Resources */,
+				BA05B8602B90318EADFD9B7A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +167,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5472871837AF90B9282F8E78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewImageUploader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA05B8602B90318EADFD9B7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewImageUploader/Pods-NewImageUploader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewImageUploader/Pods-NewImageUploader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewImageUploader/Pods-NewImageUploader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9173F3226C308DB00F9656D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9173F3E26C308DB00F9656D /* ViewController.swift in Sources */,
 				F9173F3A26C308DB00F9656D /* AppDelegate.swift in Sources */,
+				F9173F5426C47B2700F9656D /* ImageModel.swift in Sources */,
+				F9173F4E26C3098300F9656D /* UploadViewController.swift in Sources */,
+				F9173F5226C4585400F9656D /* NetworkManager.swift in Sources */,
 				F9173F3C26C308DB00F9656D /* SceneDelegate.swift in Sources */,
+				F9173F5026C309C400F9656D /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +363,7 @@
 		};
 		F9173F4B26C308DE00F9656D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C8E3E58B20FA5E5037BC32 /* Pods-NewImageUploader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +377,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.swiftbook.MakarovVN-HW2.11.NewImageUploader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F9173F4C26C308DE00F9656D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F0BE1E535E345085CB7322 /* Pods-NewImageUploader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +397,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.swiftbook.MakarovVN-HW2.11.NewImageUploader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

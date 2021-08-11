@@ -1,24 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sfE-Uj-4P6">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Image uploader-->
+        <scene sceneID="Owd-KQ-PaR">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="sfE-Uj-4P6" customClass="UploadViewController" customModule="NewImageUploader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UzQ-7X-w0W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="Oh7-Jr-bQa">
+                                <rect key="frame" x="9.5" y="54" width="301" height="460"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZmI-hj-oKZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="301" height="111.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="111.5" id="YaS-vt-UGF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="4is-oZ-2az">
+                                        <rect key="frame" x="0.0" y="153.5" width="301" height="139.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmH-2w-KnY">
+                                                <rect key="frame" x="0.0" y="0.0" width="301" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EG5-lw-kIf">
+                                                <rect key="frame" x="0.0" y="76" width="301" height="63.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5fY-eW-AW3">
+                                        <rect key="frame" x="0.0" y="335" width="301" height="125"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0I-lc-pWx">
+                                                <rect key="frame" x="0.0" y="0.0" width="301" height="55"/>
+                                                <color key="backgroundColor" red="0.63934866099999998" green="0.96820529840000003" blue="0.82260374169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Choose image"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="sfE-Uj-4P6" eventType="touchUpInside" id="9O0-Hf-sU3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XM8-OX-93x">
+                                                <rect key="frame" x="0.0" y="70" width="301" height="55"/>
+                                                <color key="backgroundColor" red="0.63934866099999998" green="0.96820529840000003" blue="0.82260374169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Upload image"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="sfE-Uj-4P6" eventType="touchUpInside" id="4eV-Bu-yed"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Oh7-Jr-bQa" secondAttribute="height" multiplier="150:229" id="AhX-kw-8zY"/>
+                                    <constraint firstItem="5fY-eW-AW3" firstAttribute="top" secondItem="Oh7-Jr-bQa" secondAttribute="top" constant="335" id="Sp3-pK-kjx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qda-cK-cas"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Oh7-Jr-bQa" firstAttribute="top" secondItem="qda-cK-cas" secondAttribute="top" constant="54" id="OCs-LW-jvF"/>
+                            <constraint firstItem="Oh7-Jr-bQa" firstAttribute="centerY" secondItem="qda-cK-cas" secondAttribute="centerY" id="TrU-JY-ZpY"/>
+                            <constraint firstItem="Oh7-Jr-bQa" firstAttribute="centerX" secondItem="qda-cK-cas" secondAttribute="centerX" id="hxu-20-lXb"/>
+                            <constraint firstItem="qda-cK-cas" firstAttribute="bottom" secondItem="Oh7-Jr-bQa" secondAttribute="bottom" constant="54" id="xxr-mI-aU0"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Image uploader" id="tq2-hn-yAg"/>
+                    <connections>
+                        <outlet property="imageView" destination="ZmI-hj-oKZ" id="hoQ-hP-Zvb"/>
+                        <outlet property="infoLabel" destination="gmH-2w-KnY" id="zvk-pL-9i7"/>
+                        <outlet property="urlTextField" destination="EG5-lw-kIf" id="oGs-dF-cDb"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbv-2r-gAu" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1134.375" y="61.267605633802816"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
